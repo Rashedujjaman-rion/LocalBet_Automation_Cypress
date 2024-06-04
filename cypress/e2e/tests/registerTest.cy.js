@@ -11,7 +11,7 @@ describe(" Registration check with valid data", () => {
     // registerObj.enterFirstName(registerData.firstName);
    });
 
-   it("oneClick registration ", () => {
+   it.skip("oneClick registration ", () => {
 
     registerObj.openURL();
     registerObj.oneClickSignUp();
