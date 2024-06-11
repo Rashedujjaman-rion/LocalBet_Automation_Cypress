@@ -1,4 +1,5 @@
 require('cypress-xpath');
+import { faker } from '@faker-js/faker';
 
 // ***********************************************
 // This example commands.js shows you how to
@@ -28,6 +29,26 @@ require('cypress-xpath');
 
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
+
+
+
+// cypress/support/commands.js
+import { faker } from '@faker-js/faker';
+
+Cypress.Commands.add('generateRandomData', () => {
+  const operatorCode = faker.helpers.arrayElement(['3', '4', '5', '6', '7', '8', '9']); 
+  const phoneNumber = `+8801${operatorCode}${faker.number.numeric(8)}`;
+  
+  return {
+    firstName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
+    email: faker.internet.email(),
+    password: faker.internet.password(),
+    phoneNumber: phoneNumber,
+  };
+});
+
+
 
 
 Cypress.Commands.add("login", (username, password) => {

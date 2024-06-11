@@ -26,7 +26,7 @@ export class registerPage {
 
 
   oneClick_signup_with_search() {
-    cy.xpath(this.weblocators.signUp).click();
+    cy.get(this.weblocators.signUp).click();
   // Click on the flag icon to open the country selector dropdown
   cy.xpath(
     this.weblocators.countrySelect
@@ -40,6 +40,7 @@ export class registerPage {
   // Select "India" from the dropdown options
   cy.xpath(this.weblocators.countryIndiaClick).click();
   cy.xpath(this.weblocators.signUpButton).click();
+  cy.get(this.weblocators.successMsg).should('have.text', 'Thank you for Registration');
   }
   
 }
