@@ -1,4 +1,4 @@
-export class registerPage {
+export class RegisterPage {
   weblocators = {
     signUp: ".signup-btn",
     signUpButton: "//button[@type='submit' and .//span[text()='sign up ']]",  

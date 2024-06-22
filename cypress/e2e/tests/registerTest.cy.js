@@ -1,7 +1,7 @@
-import { registerPage } from "../../pages/registerPage";
-import { faker } from '@faker-js/faker';
+import { RegisterPage } from "../../pages/registerPage";
 
-const registerObj = new registerPage();
+
+const registerObj = new RegisterPage();
 import registerData from "../../fixtures/registerData.json";
 
 describe(" Registration check with valid data", () => {

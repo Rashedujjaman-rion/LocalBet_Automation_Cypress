@@ -32,21 +32,19 @@ import { faker } from '@faker-js/faker';
 
 
 
-// cypress/support/commands.js
-import { faker } from '@faker-js/faker';
 
-Cypress.Commands.add('generateRandomData', () => {
-  const operatorCode = faker.helpers.arrayElement(['3', '4', '5', '6', '7', '8', '9']); 
-  const phoneNumber = `+8801${operatorCode}${faker.number.numeric(8)}`;
+// Cypress.Commands.add('generateRandomData', () => {
+//   const operatorCode = faker.helpers.arrayElement(['3', '4', '5', '6', '7', '8', '9']); 
+//   const phoneNumber = `+8801${operatorCode}${faker.number.numeric(8)}`;
   
-  return {
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
-    email: faker.internet.email(),
-    password: faker.internet.password(),
-    phoneNumber: phoneNumber,
-  };
-});
+//   return {
+//     firstName: faker.person.firstName(),
+//     lastName: faker.person.lastName(),
+//     email: faker.internet.email(),
+//     password: faker.internet.password(),
+//     phoneNumber: phoneNumber,
+//   };
+// });
 
 
 

@@ -2,7 +2,7 @@ import testData from "../../fixtures/testData.json";
 import { LoginPage } from "../../pages/loginPage";
 
 
-const loginObj  = new loginPage();
+const loginObj  = new LoginPage();
 
 describe(" Login ", () => {
     
@@ -12,9 +12,10 @@ describe(" Login ", () => {
   
 })      
 
-it("Login with invalid data", () => {
+it.skip("Login with invalid data", () => {
 
-  
+ loginObj.openURL()
+ loginObj.login_with_invalid_data()
 
 }) 
    
