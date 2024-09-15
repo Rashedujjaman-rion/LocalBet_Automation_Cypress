@@ -78,6 +78,12 @@ Cypress.Commands.add("login", (username, password) => {
 
   Cypress.Commands.add('oneClickRegistration', function() {
     cy.visit("https://dev-user.localbet.xyz/");
+<<<<<<< HEAD
+=======
+    cy.get('.signup-btn').click();
+  Cypress.Commands.add('oneClickRegistration', function() {
+    cy.visit("https://dev-user.localbet.xyz/");
+>>>>>>> 7215fb06f6e640ba51cbf899fea3a0aac3fdaa18
     cy.get('.signup-btn').click({ multiple: true, force: true });
     cy.wait(2000);
     cy.xpath("//button[@type='submit' and .//span[text()='sign up ']]").click();
@@ -91,4 +97,8 @@ Cypress.Commands.add("login", (username, password) => {
     //cy.get('.p-4 > :nth-child(2) > .w-full > .ant-typography').click();
 });
 
+<<<<<<< HEAD
  
+=======
+  });
+>>>>>>> 7215fb06f6e640ba51cbf899fea3a0aac3fdaa18
