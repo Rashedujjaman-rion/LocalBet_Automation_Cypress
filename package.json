@@ -7,7 +7,7 @@
     "test:loginTest": "npx cypress run --spec cypress/e2e/tests/loginTest.cy.js",
     "test:registerTest": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.js",
     "test:profileTest": "npx cypress run --spec cypress/e2e/tests/profileTest.cy.js",
-    "test:depositeTest": "npx cypress run --spec cypress/e2e/tests/depositTest.cy.js",
+    "test:depositTest": "npx cypress run --spec cypress/e2e/tests/depositTest.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rashed",
