@@ -15,7 +15,7 @@ export class LoginPage{
     
 
 
-    login_with_invalid_data(){       
+    login_with_invalid_data() {       
 
         cy.get(this.loginLocator.loginButton).click()
         cy.get(this.loginLocator.userName).type(faker.internet.email({ firstName: 'rashed' }))

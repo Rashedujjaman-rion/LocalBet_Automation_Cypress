@@ -14,8 +14,6 @@ export class RegisterPage {
     cy.visit(Cypress.env('baseUrl'));
   }
 
-
-
   oneClickSignUp() {
     cy.get(this.weblocators.signUp).click();
     cy.wait(2000)
@@ -23,8 +21,6 @@ export class RegisterPage {
     cy.get(this.weblocators.successMsg).should('have.text', 'Thank you for Registration');
   }
  
-
-
   oneClick_signup_with_search() {
     cy.get(this.weblocators.signUp).click();
   // Click on the flag icon to open the country selector dropdown
@@ -44,14 +40,3 @@ export class RegisterPage {
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-

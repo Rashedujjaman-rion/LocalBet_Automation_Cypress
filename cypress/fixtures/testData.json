@@ -1,13 +1,20 @@
 {
     "login": 
     {
-      "username": "258d03012",
-      "password": "a3347f"
+      "username": "d3df9b012",
+      "password": "afcb78"
     },
   
     "message":
     {
       "successMessage": "Success: You have added MacBook to your shopping cart!"
-    }
+    },
     
-  }
+    "profile":
+    {
+
+      "fullName": "Russell Azim Vai"
+    }
+
+    
+}
