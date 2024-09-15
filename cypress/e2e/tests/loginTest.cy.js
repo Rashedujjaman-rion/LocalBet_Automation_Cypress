@@ -8,7 +8,7 @@ describe('Login and forgot password Testcases', () => {
 
 
 
-  it('should read login credentials from the text file and perform login', () => {
+  it.only('should read login credentials from the text file and perform login', () => {
 
     cy.oneClickRegistration();
     cy.xpath("//div[@class='flex items-center gap-3 bg-[#F4F4F4] rounded px-2 py-1 relative cursor-pointer']").click();

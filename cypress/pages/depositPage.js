@@ -2,7 +2,8 @@ export class DepositPage{
 
 
     deposit_with_valid_data(){
-        cy.login('azim@softic.ai', '111111');
+        cy.oneClickRegistration();
+        //cy.login('azim@softic.ai', '111111');
         cy.get('.gap-4 > .gap-3').click();
         cy.get('[href="/user/profile/personal-information"]').click();
         cy.wait(1000);
