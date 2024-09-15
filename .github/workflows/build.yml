@@ -18,7 +18,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Mochawesome HTML Report
-          path: cypress/reports/html
+          path: cypress/reports/html 
+          
 
       # - name: Slack Notification
       #   if: always()
