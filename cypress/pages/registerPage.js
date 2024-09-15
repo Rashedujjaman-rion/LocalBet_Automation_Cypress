@@ -31,6 +31,7 @@ export class RegisterPage {
 
    //oneClick registration with country,currency search
 
+ 
   oneClick_signup_with_search() {
     cy.get(this.weblocators.signUp).click();
   // Click on the flag icon to open the country selector dropdown
@@ -147,4 +148,6 @@ export class RegisterPage {
 
 
 
+
+  
 

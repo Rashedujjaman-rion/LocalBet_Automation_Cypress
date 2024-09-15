@@ -36,8 +36,6 @@ require('cypress-downloadfile/lib/downloadFileCommand')
 /// <reference types="cypress-xpath" />
 
 
-
-
 // Cypress.Commands.add('generateRandomData', () => {
 //   const operatorCode = faker.helpers.arrayElement(['3', '4', '5', '6', '7', '8', '9']); 
 //   const phoneNumber = `+8801${operatorCode}${faker.number.numeric(8)}`;
@@ -50,9 +48,6 @@ require('cypress-downloadfile/lib/downloadFileCommand')
 //     phoneNumber: phoneNumber,
 //   };
 // });
-
-
-
 
 Cypress.Commands.add("login", (username, password) => {
     cy.visit("https://dev-user.localbet.xyz/");
@@ -83,6 +78,9 @@ Cypress.Commands.add("login", (username, password) => {
   Cypress.Commands.add('oneClickRegistration', function() {
     cy.visit("https://dev-user.localbet.xyz/");
     cy.get('.signup-btn').click();
+  Cypress.Commands.add('oneClickRegistration', function() {
+    cy.visit("https://dev-user.localbet.xyz/");
+    cy.get('.signup-btn').click({ multiple: true, force: true });
     cy.wait(2000);
     cy.xpath("//button[@type='submit' and .//span[text()='sign up ']]").click();
     cy.get(".signup-confirmation-container > :nth-child(1) > .ant-typography").should('have.text', 'Thank you for Registration');
@@ -94,3 +92,5 @@ Cypress.Commands.add("login", (username, password) => {
     //cy.xpath("//div[@class='flex items-center gap-3 bg-[#F4F4F4] rounded px-2 py-1 relative cursor-pointer']").click();
     //cy.get('.p-4 > :nth-child(2) > .w-full > .ant-typography').click();
 });
+
+  });
