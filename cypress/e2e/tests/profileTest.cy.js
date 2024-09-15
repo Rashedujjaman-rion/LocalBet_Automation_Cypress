@@ -26,7 +26,7 @@ describe("Personal Info", () => {
 //Verification
 describe("Verification ", () => {
     
-  it.skip("Verification With Doc Type And Image upload", () => {
+  it("Verification With Doc Type And Image upload", () => {
      cy.login(testData.login.username, testData.login.password);
      //cy.oneClickRegistration();
      profileobj.ProfileMenu();
@@ -43,7 +43,7 @@ describe("Verification ", () => {
 //Contact Info
 describe("Contact Info", () => {
     
-   it.skip("Phone & Email Add and Edit  With Valid Data", () => {
+   it("Phone & Email Add and Edit  With Valid Data", () => {
 
      cy.oneClickRegistration();
      //cy.login(testData.login.username, testData.login.password);
