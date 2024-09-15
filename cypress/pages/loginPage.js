@@ -99,7 +99,7 @@ export class LoginPage{
         cy.wait(2000)
         cy.get('#rc-tabs-5-tab-phone > .ant-space').click();
         cy.wait(2000)
-        cy.get('#phone > .ant-input').type("01921298565");
+        cy.get('#phone > .ant-input').type("01932111520");
         cy.wait(2000)
         cy.get('#phone > .ant-input').click()
         cy.get('.ant-form-item-control-input-content > .ant-btn').click();

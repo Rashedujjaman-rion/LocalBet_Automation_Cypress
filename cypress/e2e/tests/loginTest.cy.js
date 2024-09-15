@@ -8,7 +8,7 @@ describe('Login and forgot password Testcases', () => {
 
 
 
-  it.only('should read login credentials from the text file and perform login', () => {
+  it('should read login credentials from the text file and perform login', () => {
 
     cy.oneClickRegistration();
     cy.xpath("//div[@class='flex items-center gap-3 bg-[#F4F4F4] rounded px-2 py-1 relative cursor-pointer']").click();
@@ -38,7 +38,7 @@ describe('Login and forgot password Testcases', () => {
 
   it("login with valid data",() => {
       
-      cy.login('rashed@softic.ai', '123456');
+      cy.login('06bf1d012', '833b8d');
       // logout 
       cy.xpath("//div[@class='flex items-center gap-3 bg-[#F4F4F4] rounded px-2 py-1 relative cursor-pointer']").click();
       cy.get('.p-4 > :nth-child(2) > .w-full > .ant-typography').click()

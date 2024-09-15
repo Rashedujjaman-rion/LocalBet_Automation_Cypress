@@ -1,7 +1,7 @@
 name: Parallel Test Build
 on: push
 jobs:
-  addToCart-run:
+  loginTest-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -11,12 +11,12 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run test:addToCart
+          command: npm run test:loginTest
 
       - name: Cypress Test Report
         uses: actions/upload-artifact@v3
         with:
-          name: Mochawesome HTML Report - Add To Cart
+          name: Mochawesome HTML Report - Login Test          
           path: cypress/reports/html
 
   registerTest-run:
