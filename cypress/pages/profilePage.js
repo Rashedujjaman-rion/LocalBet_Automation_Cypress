@@ -61,24 +61,21 @@ export class profilePage {
 
   }
 
-  //district feature
+  //State feature
   StateSlect() {
-
-    cy.wait(2000);
-
-    cy.xpath("//div[@class='ant-select-selector']//span[@class='ant-select-selection-item']/p[text()='Dhaka Division']").click({multiple: true, force:true});
-    cy.get('.ant-select-selection-item > p').click({multiple: true, force:true})
-
-    //cy.xpath(this.profileLocators.state).click({multiple: true, force:true});
-    //cy.xpath(this.profileLocators.state).should('be.visible');
+    cy.xpath("(//div[@class='ant-select-selector'])[3]").click({multiple: true, force:true})
+    cy.xpath("(//p[contains(text(),'Rangpur Division')])[1]")
+    .click({multiple: true, force:true});
   
   }
+
+
  //city feature
   citySlect() {
+    cy.xpath("(//p[contains(text(),'Chilmāri')])[1]").click({multiple: true, force:true});
+    cy.xpath("(//p[contains(text(),'Chilmāri')])[1]").should('be.visible').click({multiple: true, force:true});
 
-    cy.xpath("//div[@class='ant-select-selector']//span[@class='ant-select-selection-search']/input[@id='rc_select_2']").click({multiple: true, force:true});
-    cy.xpath(this.profileLocators.city).click({multiple: true, force:true});
-    cy.xpath(this.profileLocators.city).should('be.visible');
+
   }
 
   //verification

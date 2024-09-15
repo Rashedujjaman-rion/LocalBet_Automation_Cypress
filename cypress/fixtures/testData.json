@@ -1,0 +1,20 @@
+{
+    "login": 
+    {
+      "username": "06bf1d012",
+      "password": "833b8d"
+    },
+  
+    "message":
+    {
+      "successMessage": "Success: You have added MacBook to your shopping cart!"
+    },
+    
+    "profile":
+    {
+
+      "fullName": "Azim Vai"
+    }
+
+    
+}
